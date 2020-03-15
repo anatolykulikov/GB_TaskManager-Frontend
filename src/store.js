@@ -5,6 +5,7 @@ import initReducers from './reducers'
 
 //midware
 import middlewares from './middleware'
+import thunk from 'redux-thunk'
 
 export default function initStore () {
     
@@ -13,7 +14,7 @@ export default function initStore () {
     return createStore (
         initReducers, 
         initialStore,
-        applyMiddleware (...middlewares),
+        applyMiddleware (thunk),
         //window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : () => {}
         )
 }

@@ -1,0 +1,18 @@
+// Размеры макета
+$width: 1180px;
+$width-large: 1390px;
+$margin: 15px;
+
+.dashboard {
+    display: flex;
+    justify-content: flex-start;
+    margin: 45px auto 0;
+    box-sizing: border-box;
+
+    @media (max-width: 1399px) {
+        width: $width;
+    }
+    @media (min-width: 1400px) {
+        width: $width-large;
+    }
+}

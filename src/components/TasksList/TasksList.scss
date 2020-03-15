@@ -1,0 +1,26 @@
+// Размеры макета
+$width: 1180px;
+$width-large: 1390px;
+$margin: 15px;
+
+.tasks-list {
+    display: block;
+    margin: 0 $margin;
+
+    @media (max-width: 1399px) {
+        width: $width/4-($margin*2);
+    }
+    @media (min-width: 1400px) {
+        width: $width-large/4-($margin*2);
+    }
+
+    &__header {
+        margin: 0 0 9px 0;
+        padding: 0;
+        font-family: "Raleway", sans-serif;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+        color: #313131;
+    }
+}

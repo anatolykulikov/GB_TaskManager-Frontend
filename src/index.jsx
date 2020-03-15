@@ -13,16 +13,16 @@ import initStore from './store.js'
 import { Provider } from 'react-redux';
 
 // Общие страницы
-import Landing from './pages/Landing/Landing.jsx';
-import Auth from './pages/Auth/Auth.jsx';
-import Registration from './pages/Registration/Registration.jsx';
-import RegistrationVerify from './pages/RegistrationVerify/RegistrationVerify.jsx';
+import Landing from 'pages/Landing/Landing.jsx';
+import Auth from 'pages/Auth/Auth.jsx';
+import Registration from 'pages/Registration/Registration.jsx';
+import RegistrationVerify from 'pages/RegistrationVerify/RegistrationVerify.jsx';
 
 // Dashboard-страницы
-import DashboardMain from './pages/DashboardMain/DashboardMain.jsx';
-import DashboardTasks from './pages/DashboardTasks/DashboardTasks.jsx';
-import DashboardTask from './pages/DashboardTask/DashboardTask.jsx';
-import DashboardArchive from './pages/DashboardArchive/DashboardArchive.jsx';
+import DashboardMain from 'pages/DashboardMain/DashboardMain.jsx';
+import DashboardTasks from 'pages/DashboardTasks/DashboardTasks.jsx';
+import DashboardTask from 'pages/DashboardTask/DashboardTask.jsx';
+import DashboardArchive from 'pages/DashboardArchive/DashboardArchive.jsx';
 
 ReactDOM.render (
    <Provider store = { initStore () }>

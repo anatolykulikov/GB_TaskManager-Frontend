@@ -8,6 +8,7 @@ $color-blue-hover: #2d5b9a;
 }
 
 .first_section {
+    position: relative;
     display: block;
     width: 100%;
     padding: 82px 0;
@@ -23,6 +24,8 @@ $color-blue-hover: #2d5b9a;
 
     &-image {
         display: block;
+        position: absolute;
+        right: 0;
 
         img {
             display: block;

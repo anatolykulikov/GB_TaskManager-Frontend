@@ -414,6 +414,7 @@ th {
   margin: 0 auto; }
 
 .first_section {
+  position: relative;
   display: block;
   width: 100%;
   padding: 82px 0;
@@ -425,7 +426,9 @@ th {
     align-items: stretch;
     align-content: stretch; }
   .first_section-image {
-    display: block; }
+    display: block;
+    position: absolute;
+    right: 0; }
     .first_section-image img {
       display: block;
       width: 130%;
@@ -554,6 +557,9 @@ th {
     color: #FFFFFF;
     border: #0C75BB solid 1px;
     border-radius: 5px; }
+    .autorization-button a {
+      text-decoration: none;
+      color: inherit; }
 
 .registration {
   display: flex;
@@ -629,6 +635,98 @@ th {
 
 
 
+.dashboard {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1180px;
+  margin: 45px auto;
+  box-sizing: border-box; }
+
+.tasks-list {
+  display: block;
+  width: 265px;
+  margin: 0 15px; }
+
+.task {
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 0 16px 0 #e7e7e7;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 0 0 15px; }
+  .task-header {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #313131; }
+  .task-category {
+    margin: 4px 0 0 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #929292; }
+  .task-time-container {
+    margin: 17px 0 0 0;
+    padding: 0; }
+    .task-time-container .task-time {
+      display: block;
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #929292;
+      margin: 0 0 5px 0; }
+  .task-status {
+    margin: 17px 0 0 0; }
+    .task-status-text {
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400; }
+    .task-status-text-completed {
+      color: #15aa2d; }
+    .task-status-text-late {
+      color: #ff9800; }
+  .task-controls {
+    margin: 17px 0 0 0; }
+    .task-controls .task-control-start {
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #4374b7;
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+      margin: 0 14px 0 0; }
+    .task-controls .task-control-start,
+    .task-controls .task-control-start:active,
+    .task-controls .task-control-start:focus {
+      outline: none; }
+    .task-controls .task-control-del {
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #d13814;
+      background-color: transparent;
+      border: 0;
+      padding: 0; }
+    .task-controls .task-control-del,
+    .task-controls .task-control-del:active,
+    .task-controls .task-control-del:focus {
+      outline: none; }
+  .task-bookmark {
+    position: absolute;
+    top: -4px;
+    right: -2px; }
 
 
 
