@@ -71,9 +71,30 @@
                 text-decoration: none;
                 margin: 0 30px 0 0;
             }
-            
+
+            a.fb-icon {
+                background-image: url(../../../miscellaneous/img/facebook-icon.png);
+            }
+
+            a.goog-icon {
+                background-image: url(../../../miscellaneous/img/google-icon.png);
+            }
+
+            a.teleg-icon {
+                background-image: url(../../../miscellaneous/img/telegram-icon.png);
+            }
+
+            a.vk-icon {
+                background-image: url(../../../miscellaneous/img/vkontakte-icon.png);
+            }
+          
         }
 
+        form {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
 
         .registration-button {
             margin: 0 auto 40px auto;
@@ -102,5 +123,7 @@
             color: #000;
             cursor: not-allowed;
         }
+
+
     }
 } 
