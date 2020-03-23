@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Input from '../../components/TestComp/Input/input.jsx'
 import Button from '../../components/TestComp/Button/button.jsx'
+import Image from '../../components/TestComp/images/image.jsx'
 
 function validateEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -139,22 +140,17 @@ export default class Registration extends Component {
                         <h1><Link to="/">TaskUp</Link></h1>
                         <div className="registration-field">
                             <h2>Sign up</h2>
+                            <form action="/verify">
                             { this.renderInputs() }
-                            <div class="registration-social">
-                                <a href="#">
-                                    <img src="../../../miscellaneous/img/facebook-icon.png" alt=""></img>
-                                </a>
-                                <a href="#">
-                                    <img src="../../../miscellaneous/img/google-icon.png" alt=""></img>
-                                </a>
-                                <a href="#">
-                                    <img src="../../../miscellaneous/img/telegram-icon.png" alt=""></img>
-                                </a>
-                                <a href="#">
-                                    <img src="../../../miscellaneous/img/vkontakte-icon.png" alt=""></img>
-                                </a>
+                            <div className="registration-social">
+                                <Link className="fb-icon" to="#"/>
+                                <Link className="goog-icon" to="#"/>
+                                <Link className="teleg-icon" to="#"/>
+                                <Link className="vk-icon" to="#"/>
                             </div>
-                            <Button disabled={!this.state.isFormValid}>Sign up</Button>
+                                <Button type="submit" disabled={!this.state.isFormValid} formmethod="post">Sign up</Button>
+                            </form>
+                            
                         </div>
                     </div>
                 </div>
