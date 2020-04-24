@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
 //Импортируем и подключаем reducers
-import { UserLogInReducer } from './userReducers.js'
+import { UserReducer } from './userReducers.js'
 
-export default combineReducers ({ UserLogInReducer })
+export default combineReducers ({ UserReducer })

@@ -1,0 +1,16 @@
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 30px auto;
+}
+
+span {
+    color: #f01f30;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+.Input.invalid label {
+    color: #f01f30;
+}

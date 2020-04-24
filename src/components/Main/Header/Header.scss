@@ -1,0 +1,82 @@
+$margin-right-logo: 106px;
+
+@import '../../../styles/index.scss'; // Незнаю почему без этого не собирается
+
+.header {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 51px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 ($padding-site/$width) * 100%;
+    background-color: $color-blue;
+}
+  
+ 
+$menu-logo-width: 643px;
+
+.menu-logo-container {
+    width: ($menu-logo-width / $width) * 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .logo {
+        text-decoration: none;
+        display: block;
+        margin: 14px ($margin-right-logo/$width) * 100% 14px 0;
+        font: 900 24px/24px "Raleway Black";
+        color: #ffffff;
+    }
+    .menu {
+        .menu-ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            .menu-item {
+                display: block;
+                padding: 15px 15px;
+                height: 21px;
+                .menu-link {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    .menu-link-icon {
+                        fill: #ffffff;
+                    }
+                    .menu-link-text {
+                        margin: 0 0 0 6px;
+                        font: 400 14px/14px "Raleway Regular";
+                        color: #ffffff;
+                    }
+                }
+            }
+            .menu-item:hover {
+                background-color: $color-blue-hover;
+            }
+        }
+    }  
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    .username-link{
+        display: flex;
+        align-items: center;
+        .username-text {
+            font: 400 14px/14px "Raleway Regular";
+            color: #ffffff;
+            margin: 0 7px 0 0;
+        }
+        .username-icon {
+            fill: #ffffff;
+        }
+    }
+}
+
+//background
+
+.body {
+    background-color: $background;
+}

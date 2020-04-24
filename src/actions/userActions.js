@@ -21,6 +21,15 @@ export const userLoginFetch = user => {
                 console.log(data.message);
             } else {
                 console.log(data);
+                //Тестовый пользователь 
+
+                data.user = {
+                    login: 'testuser',
+                    email: 'test@test@gmail.com'
+                }
+
+                console.log(data.user);
+
                 dispatch(loginUser(data.user));
             }
         })
